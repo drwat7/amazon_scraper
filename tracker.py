@@ -17,7 +17,7 @@ def check_price():
     without_comma=price.replace(',','')
     converted_price=float(without_comma[1:])
 
-    if(converted_price>70000.0):
+    if(converted_price<70000.0):
         send_mail()
 
     print(title.strip())
